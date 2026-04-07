@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Cards</title>
+<style>
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f2f5;
+    padding: 40px 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #b322a7;
+  }
+
+  /* PRICING CONTAINER */
+  .pricing {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* CARD COMMON STYLES */
+  .basic, .premium, .popular {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .basic:hover, .premium:hover, .popular:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  /* FLEX SIZES */
+  .basic, .premium { flex: 1; }
+  .popular { 
+    flex: 1.2; 
+    transform: scale(1.05); 
+    order: -1; 
+    border: 2px solid #fc00b9;
+    background: #e796d4;
+  }
+
+  /* CARD CONTENT */
+  .card-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #111212;
+  }
+
+  .card-price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #9f2de1;
+  }
+
+  .card-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  .card-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .card-button {
+    background-color: #9d0a87;
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .card-button:hover {
+    background-color: #34a299;
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 900px) {
+    .pricing {
+      flex-direction: column;
+      align-items: center;
+    }
+    .popular {
+      order: 0;
+      transform: scale(1.05);
+    }
+  }
+</style>
+</head>
+<body>
+
+<h2>PRICING PLANS</h2>
+
+<div class="pricing">
+  <!-- Basic Card -->
+  <div class="basic">
+    <div class="card-title">BASIC</div>
+    <div class="card-price">$10/mo</div>
+    <ul class="card-features">
+      <li>1 User</li>
+      <li>5 Projects</li>
+      <li>Email Support</li>
+    </ul>
+    <button class="card-button">Select Plan</button>
+  </div>
+
+  <!-- Popular Card (Middle Highlighted) -->
+  <div class="popular">
+    <div class="card-title">PREMIUM</div>
+    <div class="card-price">$25/mo</div>
+    <ul class="card-features">
+      <li>5 Users</li>
+      <li>Unlimited Projects</li>
+      <li>Priority Support</li>
+    </ul>
+    <button class="card-button">Select Plan</button>
+  </div>
+
+  <!-- Advanced/Pro Card -->
+  <div class="premium">
+    <div class="card-title">ADVANCED</div>
+    <div class="card-price">$50/mo</div>
+    <ul class="card-features">
+      <li>10 Users</li>
+      <li>Unlimited Projects</li>
+      <li>24/7 Support</li>
+    </ul>
+    <button class="card-button">Select Plan</button>
+  </div>
+</div>
+
+</body>
+</html>

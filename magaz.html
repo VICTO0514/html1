@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Luxury Watch Magazine</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #1c1c1c, #2a2a2a);
+  color: #333;
+}
+
+/* Layout */
+.magazine {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Main */
+.main-story {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.main-story:hover {
+  transform: translateY(-5px);
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  background: #2f2f2f;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: #3a3a3a;
+}
+
+/* Images */
+img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Grid images */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.image-grid img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Full image */
+.full-img {
+  margin: 20px 0;
+}
+
+/* Typography */
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #d4af37;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Divider */
+.page-divider {
+  text-align: center;
+  color: white;
+  margin: 50px 0;
+  font-weight: bold;
+}
+
+/* Glow effect */
+h1:hover {
+  color: #d4af37;
+  text-shadow: 0 0 10px #d4af37;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="magazine">
+
+  <div class="main-story">
+    <h1>⌚ Luxury Watch Collection</h1>
+
+    <img class="full-img" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+
+    <p>
+      A luxury watch is more than a timepiece — it defines elegance, status, and personality.
+    </p>
+
+    <div class="image-grid">
+      <img src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6">
+      <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3">
+    </div>
+
+    <h2>Design Excellence</h2>
+    <p>
+      Crafted with precision, luxury watches use premium materials and timeless designs.
+    </p>
+  </div>
+
+  <div class="sidebar">
+
+    <div class="card">
+      <h2>Top Styles</h2>
+      <p>Analog | Chronograph | Smart</p>
+      <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b">
+    </div>
+
+    <div class="card">
+      <h2>Trending</h2>
+      <p>Minimal | Luxury | Sport</p>
+      <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12">
+    </div>
+
+    <div class="card">
+      <h2>Features</h2>
+      <p>GPS, Waterproof, Health Tracking</p>
+      <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade">
+    </div>
+
+  </div>
+
+</div>
+
+<div class="page-divider">— PAGE 2 —</div>
+
+<!-- PAGE 2 -->
+<div class="magazine">
+
+  <div class="main-story">
+    <h1>🕰 Evolution of Watches</h1>
+
+    <img class="full-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+
+    <p>
+      From mechanical gears to smart technology, watches have transformed over time.
+    </p>
+
+    <div class="image-grid">
+      <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+    </div>
+
+    <h2>Modern Era</h2>
+    <p>
+      Smartwatches now combine technology and style in one compact device.
+    </p>
+  </div>
+
+  <div class="sidebar">
+
+    <div class="card">
+      <h2>Categories</h2>
+      <p>Automatic | Digital | Hybrid</p>
+      <img src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6">
+    </div>
+
+    <div class="card">
+      <h2>Must Have</h2>
+      <p>Luxury + Smart Combo</p>
+      <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3">
+    </div>
+
+    <div class="card">
+      <h2>Highlights</h2>
+      <p>Elegant | Durable | Premium</p>
+      <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b">
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

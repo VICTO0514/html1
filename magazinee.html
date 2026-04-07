@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .pricing {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .basic, .premium {
+            flex: 1;
+        }
+
+        .popular {
+            flex: 1.2;
+            transform: scale(1.05);
+            order: -1;
+            border: 2px solid #ff9800;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 28px;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background: #2D3E4E;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .popular button {
+            background: #ff9800;
+        }
+    </style>
+</head>
+<body>
+
+<div class="pricing">
+
+    <div class="card basic">
+        <h2>Basic</h2>
+        <p class="price">$10/month</p>
+        <ul>
+            <li>✔ 5 Projects</li>
+            <li>✔ Basic Support</li>
+            <li>✔ 1 GB Storage</li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+
+    <div class="card popular">
+        <h2>Popular</h2>
+        <p class="price">$20/month</p>
+        <ul>
+            <li>✔ 15 Projects</li>
+            <li>✔ Priority Support</li>
+            <li>✔ 10 GB Storage</li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+
+    <div class="card premium">
+        <h2>Premium</h2>
+        <p class="price">$30/month</p>
+        <ul>
+            <li>✔ Unlimited Projects</li>
+            <li>✔ 24/7 Support</li>
+            <li>✔ 100 GB Storage</li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+
+</div>
+
+</body>
+</html>

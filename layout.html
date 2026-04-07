@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .logo {
+            background-color: #c0c0c0;
+            padding: 30px;
+            text-align: left;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navigation {
+            background-color: #c0c0c0;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .header-banner {
+            background-color: #c0c0c0;
+            padding: 60px 30px;
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .main-container {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .background-left {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            background-color: #c0c0c0;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #c0c0c0;
+            padding: 60px 30px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            width: 200px;
+            min-height: 400px;
+        }
+
+        .body-area {
+            background-color: #c0c0c0;
+            padding: 80px;
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            flex: 1;
+            min-height: 400px;
+        }
+
+        .background-right {
+            writing-mode: vertical-rl;
+            background-color: #c0c0c0;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #c0c0c0;
+            padding: 30px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="logo">Logo</header>
+    <nav class="navigation">Navigation</nav>
+    <div class="header-banner">Header / Banner</div>
+
+    <div class="main-container">
+        <div class="background-left">Background</div>
+        <div class="content-wrapper">
+            <aside class="sidebar">Side Bar</aside>
+            <main class="body-area">Body Area</main>
+        </div>
+        <div class="background-right">Background</div>
+    </div>
+
+    <footer class="footer">Footer</footer>
+</body>
+</html>
